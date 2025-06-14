@@ -1,5 +1,6 @@
 package Jun04;
 
 public interface Swimmer {
-    void swim();
+    final int meters = 10;
+    public abstract void swim();
 }

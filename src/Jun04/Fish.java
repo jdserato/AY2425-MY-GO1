@@ -16,8 +16,12 @@ public class Fish extends Animal implements Swimmer, EggLaying {
         System.out.println(name + " can swim");
     }
 
-    @Override
     public int layEggs() {
         return 100;
+    }
+
+    @Override
+    public void produceEggs() {
+        System.out.println("Laying " + layEggs() + " si fish");
     }
 }

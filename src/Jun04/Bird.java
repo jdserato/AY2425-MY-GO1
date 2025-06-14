@@ -1,8 +1,8 @@
 package Jun04;
 // subclass of Animal
 public class Bird extends Animal implements EggLaying{
-    public Bird() {
-        super("Tweety");
+    public Bird(String name) {
+        super(name);
     }
 
     @Override
@@ -13,5 +13,8 @@ public class Bird extends Animal implements EggLaying{
     @Override
     public int layEggs() {
         return 5;
+    }
+    public void produceEggs() {
+        System.out.println("Laying " + layEggs());
     }
 }
